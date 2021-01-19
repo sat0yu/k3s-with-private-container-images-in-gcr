@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      containers:
+        - name: test
+          image: ghcr.io/sat0yu/k3s-with-private-container-images-in-gcr/test:master
+          imagePullPolicy: Always
+          command: ["yarn", "start"]
