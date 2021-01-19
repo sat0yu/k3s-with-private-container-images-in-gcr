@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "ssh://git@github.com/sat0yu/k3s-with-private-container-images-in-gcr.git",
+  "author": "Yusuke Sato <yusuke1.sato9.git@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn node --trace-warnings src/index.js"
+  }
+}
